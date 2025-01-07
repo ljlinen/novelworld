@@ -1,0 +1,111 @@
+section[class="books"] {
+   width: 100%;
+   color: #282828;
+   background-color: #fff;
+
+   .head {
+      display: flex;
+      padding: 20px;
+      gap: 6px;
+      width: 100%;
+      flex-direction: column;
+      
+      select {
+        background-color: #C960EE;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+      }
+   }
+
+   .body {
+      columns: 2;
+      padding: 25px;
+      gap: 10px;
+   }
+
+   .book {
+      max-width: 200px;
+      height: fit-content;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      break-inside: avoid;
+      box-shadow: rgba(0, 0, 0, .2) 0 0 10px;
+      
+      img {
+         width: 100%;
+      }
+
+      .about-and-option-items {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         width: 100%;
+      }
+
+      .option-items {
+         align-self: flex-end;
+         background-color: rgba(255, 255, 255);
+         border-radius: 2px;
+      }
+      .option-items-show {
+         opacity: 1;
+         height: 66px;
+         width: 83px;
+         transition: opacity .3s .3s;
+      }
+      .option-items-hide {
+         opacity: 0;
+         width: 0;
+         height: 0;
+         transition: opacity .3s, width 0s .3s, height 0s .3s;
+      }
+      .option-items p {
+         color: #000000;
+         padding-inline: 12px;
+         padding-block: 2px;
+         border-bottom: 1px solid #00000048;
+      }
+
+      .about-and-options {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         padding: 12px;
+         text-overflow: ellipsis;
+         background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+         color: #fff;
+      }
+      
+      .about-and-options .about {
+
+         /*p {
+         font-size: 12px;
+         }
+         p {
+            font-size: 12px;
+         } */
+      }
+
+      .about-and-options .options {
+         display: flex;
+         gap: 3px;
+      
+         span {
+            height: 4px;
+            width: 4px;
+            border-radius: 4px;
+            background-color: #fff;
+         }
+      }
+   }
+}

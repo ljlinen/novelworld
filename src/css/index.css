@@ -1,0 +1,38 @@
+:root {
+  --clr-60: #DDE2E5;
+  --clr-30: #FFFFFF;
+  --clr-10: #44B1EF;
+  --clr-txt-h1: #17130f;
+  --clr-txt-h3: #17130F;
+  --clr-txt-p: #17130f83;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: font;
+  src: url('../asset/font/suse.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-60);
+  font-family: font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--clr-txt-h1);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+p, li, select, option {
+  opacity: .7;
+  font-size: 13px;
+}
